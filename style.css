@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-width: 100vh;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+.cookie-banner {
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+}
+.cookie-banner__content {
+    display: flex;
+    width: 1170px;
+}
+.site-header {
+    display: flex;
+    justify-content: center;
+}
+.site-header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+}
+.site-header__nav {
+    width: 1005px;
+}
+.site-header__top-bar,
+.site-header__bottom-bar,
+.site-header__top-bar-left .site-header__top-bar-right {
+    display: flex;
+    justify-content: space-between;
+}
