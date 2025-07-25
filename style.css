@@ -1,3 +1,40 @@
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueHeavy.otf");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueBold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueMedium.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueRoman.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueLight.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Helvetic Neue";
+    src: url("fonts/HelveticaNeueExtraLight.otf");
+    font-weight: 200;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +42,32 @@
 }
 body {
     min-width: 100vh;
+    font-family: "Helvetic Neue";
+    color: rgb(41, 41, 41);
 }
 ul {
     display: flex;
     list-style: none;
+}
+p {
+    font-weight: 400;
+}
+h2 {
+    font-weight: 800;
+}
+li > a {
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}
+button {
+    background-color: rgb(255, 188, 13);
+    border: none;
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.3rem;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(41, 41, 41);
+    width: fit-content;
 }
 .cookie-banner {
     height: 106px;
@@ -24,6 +83,9 @@ ul {
 .site-header {
     display: flex;
     justify-content: center;
+    padding-top: 15px;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.092);
+    height: 134px;
 }
 .site-header__content {
     display: flex;
@@ -32,12 +94,31 @@ ul {
     width: 1170px;
 }
 .site-header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 1005px;
+    height: 119px;
 }
 .site-header__top-bar,
 .site-header__bottom-bar,
 .site-header__top-bar-left .site-header__top-bar-right {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__top-bar-item {
+    display: flex;
+    align-items: flex-end;
+}
+.site-header__top-bar-left {
+    width: 303px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.site-header__top-bar-right {
+    width: 402px;
     justify-content: space-between;
 }
 main {
@@ -48,6 +129,7 @@ main {
 .promo-banner {
     display: flex;
     width: 1170px;
+    margin-top: 7rem;
 }
 .promo-banner__image {
     width: 748px;
