@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px red solid;
+}
+body {
+    min-height: 100vh;
+    font-family: "Helvetic Neue";
+    color: rgb(41, 41, 41);
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.site-header {
+    border: 1px solid red;
+    padding-top: 15px;
+    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.092);
+    height: 134px;
+    width: 100%;
+}
+.site-header__logo {
+    margin-right: 60px;
+}
+.site-header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 90px;
+    margin-bottom: 30px;
+}
+.site-header__top-bar,
+.site-header__bottom-bar,
+.site-header__top-bar-left .site-header__top-bar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__bottom-bar {
+    margin-right: 2rem;
+}
+.site-header__top-bar-item {
+    display: flex;
+    align-items: flex-end;
+}
+.site-header__top-bar {
+    font-size: 14px;
+}
+.site-header__top-bar-left {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.site-header__top-bar-right {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+}
+.promo-banner {
+    border: 1px solid red;
+    display: flex;
+    margin-top: 6.25rem;
+}
+.promo-banner__image {
+    width: 748px;
+    height: fit-content;
+}
