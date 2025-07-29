@@ -42,14 +42,17 @@
                     continuing to use our website, you agree to the revised
                     Terms & Conditions agreement.
                 </p>
-                <button>Accept</button>
+                <button class="accept-button">Accept</button>
             </div>
         </div>
         <header class="site-header">
             <div class="container site-header__content">
-                <div class="site-header__logo">
-                    <img src="images/mcd_logo.jpg" alt="" />
-                </div>
+                <img
+                    class="site-header__logo"
+                    src="images/mcd_logo.jpg"
+                    alt=""
+                />
+
                 <nav class="site-header__nav">
                     <div class="site-header__top-bar">
                         <ul class="site-header__top-bar-left">
@@ -127,6 +130,49 @@
                 </nav>
             </div>
         </header>
+        <header class="site-header__mobile">
+            <div class="site-header__content">
+                <div class="site-header__content-left">
+                    <img
+                        class="site-header__logo"
+                        src="images/mcd_logo.jpg"
+                        alt=""
+                    />
+                    <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect
+                            y="3"
+                            width="22"
+                            height="2.5"
+                            rx="1.25"
+                            fill="#333333"
+                        />
+                        <rect
+                            y="9.25"
+                            width="22"
+                            height="2.5"
+                            rx="1.25"
+                            fill="#333333"
+                        />
+                        <rect
+                            y="15.5"
+                            width="22"
+                            height="2.5"
+                            rx="1.25"
+                            fill="#333333"
+                        />
+                    </svg>
+                </div>
+                <div class="site-header__content-right">
+                    <button class="order-mobile">Order Now</button>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="container promo-banner">
                 <img
@@ -175,7 +221,7 @@
                     <button class="promo-banner__cta">Order in the App</button>
                 </div>
             </section>
-            <section class="promo-banner">
+            <section class="container promo-banner">
                 <img
                     class="promo-banner__image"
                     src="images/spicymcmuffin.avif"
@@ -202,7 +248,7 @@
                     <button class="promo-banner__cta">Order in the App</button>
                 </div>
             </section>
-            <section class="promo-banner">
+            <section class="container promo-banner">
                 <img
                     class="promo-banner__image"
                     src="images/smoresmcflurry.avif"
@@ -224,7 +270,7 @@
                     </button>
                 </div>
             </section>
-            <section class="promo-banner">
+            <section class="container promo-banner">
                 <img
                     class="promo-banner__image"
                     src="images/freebigmac.avif"
@@ -252,7 +298,7 @@
                     </button>
                 </div>
             </section>
-            <section class="promo-banner">
+            <section class="container promo-banner">
                 <img
                     class="promo-banner__image"
                     src="images/mcdelivery.avif"
